@@ -1,0 +1,55 @@
+//You've bought a Bitcoin and now it's on the rise!!!
+//Create a program that:
+//Reads the value of the bitcoin at the time of purchase
+//Reads the percentage of increase (or decrease)
+//Prints the total value of your bitcoin
+//Prints the increase or decrease value
+//Example: bitcoin_value = 10000, bitcoin_increase = 10%
+//Output: total_bitcoin_value = 11000, bitcoin_increase_value = 1000
+//你购买了一个比特币，现在它正在升值！！！
+//创建一个程序，用于：
+//读取购买时比特币的价值
+//读取涨幅（或跌幅）的百分比
+//打印你的比特币总价值
+//打印涨幅或跌幅
+//示例：bitcoin_value = 10000，bitcoin_increase = 10%
+//输出：total_bitcoin_value = 11000，bitcoin_increase_value = 1000
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            // Read initial Bitcoin value at purchase
+            System.out.print("Enter the Bitcoin value at the time of purchase: ");
+            double bitcoinValue = scanner.nextDouble();
+
+            // Validate initial value is non-negative
+            if (bitcoinValue < 0) {
+                System.out.println("Error: Bitcoin value cannot be negative!");
+                return;
+            }
+
+            // Read percentage increase/decrease
+            System.out.print("Enter the percentage increase/decrease (%): ");
+            double percentageChange = scanner.nextDouble();
+
+            // Calculate the increase/decrease value
+            double changeValue = bitcoinValue * (percentageChange / 100);
+
+            // Calculate total value after change
+            double totalValue = bitcoinValue + changeValue;
+
+            // Display results
+            System.out.printf("total_bitcoin_value = %.2f, bitcoin_increase_value = %.2f%n",
+                    totalValue, changeValue);
+
+        } catch (Exception e) {
+            // Handle non-numeric input errors
+            System.out.println("Error: Please enter valid numbers!");
+        } finally {
+            scanner.close();
+        }
+    }
+}
