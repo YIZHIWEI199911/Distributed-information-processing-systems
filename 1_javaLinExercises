@@ -1,0 +1,102 @@
+Enter the radius r of the circle. Calculate the area (π * r ^ 2) and perimeter (2 * π * r) of a circle with this radius. 
+
+Enter the width w and height h of the rectangle. Find and display on the console the perimeter and area of a given rectangle.
+
+Create two variables a and b, and initially set them each to a different number. Write a program that swaps both values.
+Example: a = 10, b = 20
+Output: a = 20, b = 10
+
+It's the end of the semester and you got your grades from three classes: Geometry, Algebra, and Physics.
+Create a program that:
+Reads the grades of these 3 classes (Grades range from 0 - 10)
+Calculate the average of your grades
+Example: Geometry = 6, Algebra = 7, Physics = 8
+Output: average_score = 7
+
+You've bought a Bitcoin and now it's on the rise!!!
+Create a program that:
+Reads the value of the bitcoin at the time of purchase
+Reads the percentage of increase (or decrease)
+Prints the total value of your bitcoin
+Prints the increase or decrease value
+Example: bitcoin_value = 10000, bitcoin_increase = 10%
+Output: total_bitcoin_value = 11000, bitcoin_increase_value = 1000
+
+You now own some property and you want to calculate the total area of the property.
+Create a program that:
+Reads the width and height
+Prints the area
+Example: width = 5, height = 2
+Output: total_area = 10
+
+You have 100000 USD are interested in buying crypto-currencies. You want to see how many coins you can buy in Bitcoin, Ethereum, and Litecoin.
+Create a program that:
+Reads the price of Bitcoin, Ethereum, and Litecoin
+Prints the amount of Bitcoin, Ethereum, and Litecoin you can buy
+Example: money = 100, bitcoin_price = 50, ethereum_price = 25, litecoin_price = 10
+Output: "With 100000$ you can buy: 2000 Bitcoins, 4000 Ethereum, and 10000 Litecoins"
+
+You are interested in buying a new laptop. You check the price and you see that the price is 300$ without the 10% tax.
+Create a program that:
+Reads the price of the laptop
+Reads the tax percentage
+Prints the total amount
+Output: "The total price of the laptop is 330$"
+
+In a company the monthly salary of an employee is calculated by: the minimum wage 400$ per month, plus 20$ multiplied by the number of years employed, plus 30$ for each child they have.
+Create a program that:
+Reads the number of years employed
+Reads the number of children the employee has
+Prints the total amount of salary the employee makes
+Output: "The total amount is 560$. 400$ minimum wage + 100$ for 5 years experience + 60$ for 2 kids"
+输入圆的半径 r。计算以此半径为圆的面积 (π * r ^ 2) 和周长 (2 * π * r)。
+
+输入矩形的宽度 w 和高度 h。计算给定矩形的周长和面积，并在控制台上显示。
+
+创建两个变量 a 和 b，并分别初始设置为不同的值。编写一个程序来交换这两个值。
+示例：a = 10, b = 20
+输出：a = 20, b = 10
+
+学期结束了，你拿到了几何、代数和物理三门课的成绩。
+创建一个程序，用于：
+读取这三门课程的成绩（成绩范围为 0 - 10）
+计算你的平均成绩
+示例：几何 = 6，代数 = 7，物理 = 8
+输出：average_score = 7
+
+你购买了一个比特币，现在它正在升值！！！
+创建一个程序，用于：
+读取购买时比特币的价值
+读取涨幅（或跌幅）的百分比
+打印你的比特币总价值
+打印涨幅或跌幅
+示例：bitcoin_value = 10000，bitcoin_increase = 10%
+输出：total_bitcoin_value = 11000，bitcoin_increase_value = 1000
+
+你现在拥有一些房产，你想计算该房产的总面积。
+创建一个程序，用于：
+读取宽度和高度
+打印面积
+示例：width = 5, height = 2
+输出：total_area = 10
+
+您有 100,000 美元，有意购买加密货币。您想看看可以购买多少比特币、以太坊和莱特币。
+创建一个程序，用于：
+读取比特币、以太坊和莱特币的价格
+打印您可以购买的比特币、以太坊和莱特币的数量
+示例：money = 100, bitcoin_price = 50, ethereum_price = 25, litecoin_price = 10
+输出：“用 100,000 美元您可以购买：2,000 个比特币、4,000 个以太坊和 1,000 个莱特币”
+
+您想购买一台新笔记本电脑。您查看了价格，发现不含 10% 的税，价格为 300 美元。
+创建一个程序，用于：
+读取笔记本电脑的价格
+读取税率
+打印总金额
+输出：“笔记本电脑的总价为 330 美元”
+
+一家公司员工的月薪计算如下：最低工资 400 美元/月，加上 20 美元乘以工作年限，再加每个孩子 30 美元。
+创建一个程序，用于：
+读取工作年限
+读取员工的孩子数量
+打印员工的总工资
+输出：“总金额为 560 美元。400 美元最低工资 + 100 美元（5 年工作经验） + 60 美元（两个孩子）”
