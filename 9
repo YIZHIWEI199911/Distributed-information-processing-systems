@@ -1,0 +1,63 @@
+//In a company the monthly salary of an employee is calculated by: the minimum wage 400$ per month, plus 20$ multiplied by the number of years employed, plus 30$ for each child they have.
+//Create a program that:
+//Reads the number of years employed
+//Reads the number of children the employee has
+//Prints the total amount of salary the employee makes
+//Output: "The total amount is 560$. 400$ minimum wage + 100$ for 5 years experience + 60$ for 2 kids"
+//一家公司员工的月薪计算如下：最低工资 400 美元/月，加上 20 美元乘以工作年限，再加每个孩子 30 美元。
+//创建一个程序，用于：
+//读取工作年限
+//读取员工的孩子数量
+//打印员工的总工资
+//输出：“总金额为 560 美元。400 美元最低工资 + 100 美元（5 年工作经验） + 60 美元（两个孩子）”
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Constant for minimum wage
+        final int MINIMUM_WAGE = 400;
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            // Read number of years employed
+            System.out.print("Enter the number of years employed: ");
+            int yearsEmployed = scanner.nextInt();
+
+            // Read number of children
+            System.out.print("Enter the number of children: ");
+            int numberOfChildren = scanner.nextInt();
+
+            // Validate inputs (cannot be negative)
+            if (yearsEmployed < 0 || numberOfChildren < 0) {
+                System.out.println("Error: Years employed and number of children cannot be negative!");
+                return;
+            }
+
+            // Calculate salary components
+            int yearsContribution = 20 * yearsEmployed;
+            int childrenContribution = 30 * numberOfChildren;
+            int totalSalary = MINIMUM_WAGE + yearsContribution + childrenContribution;
+
+            // Handle singular/plural for output readability
+            String yearLabel = (yearsEmployed == 1) ? "year" : "years";
+            String kidLabel = (numberOfChildren == 1) ? "kid" : "kids";
+
+            // Generate the detailed output
+            System.out.printf("The total amount is %d$. %d$ minimum wage + %d$ for %d %s experience + %d$ for %d %s%n",
+                    totalSalary,
+                    MINIMUM_WAGE,
+                    yearsContribution,
+                    yearsEmployed,
+                    yearLabel,
+                    childrenContribution,
+                    numberOfChildren,
+                    kidLabel);
+
+        } catch (Exception e) {
+            // Handle non-integer input errors
+            System.out.println("Error: Please enter valid numbers for years and children!");
+        } finally {
+            scanner.close();
+        }
+    }
+}
