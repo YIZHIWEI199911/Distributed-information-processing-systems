@@ -1,6 +1,3 @@
-
-
-
 Create a program that reads a number and checks is it even or odd
 	Example_1:
     Input: 2
@@ -38,13 +35,13 @@ Create a program that find a minimum from 3 integer numbers.
     Output: 2
 
 
-An integer number is given. Create a program that checks it and prints its description, like “negative even number”, “zero number”, “positive odd number”, etc.
+An integer number is given. Create a program that checks it and prints its description, like â€œnegative even numberâ€, â€œzero numberâ€, â€œpositive odd numberâ€, etc.
 	Example_1:
     Input: 2
     Output: positive even number
 	Example_2:
     Input: -3
-    Output: “negative odd number
+    Output: â€œnegative odd number
 	Example_3:
     Input: 0
     Output: zero number
@@ -173,4 +170,5 @@ Warning! February can have 29 or 28 days. It's up to the year (leap or not).
     Output example 1: This month has 29 days
     Input example 2: February
 		     2003
+
     Output example 2: This month has 28 days
