@@ -1,0 +1,41 @@
+//Create two variables a and b, and initially set them each to a different number. Write a program that swaps both values.
+//Example: a = 10, b = 20
+//Output: a = 20, b = 10
+//创建两个变量 a 和 b，并分别初始设置为不同的值。编写一个程序来交换这两个值。
+//示例：a = 10, b = 20
+//输出：a = 20, b = 10
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            // Get user input for variable a
+            System.out.print("Enter the value of a: ");
+            int a = scanner.nextInt();
+
+            // Get user input for variable b
+            System.out.print("Enter the value of b: ");
+            int b = scanner.nextInt();
+
+            // Display values before swapping
+            System.out.println("\nBefore swapping:");
+            System.out.println("a = " + a + ", b = " + b);
+
+            // Swap the values using a temporary variable
+            int temp = a;
+            a = b;
+            b = temp;
+
+            // Display values after swapping
+            System.out.println("\nAfter swapping:");
+            System.out.println("a = " + a + ", b = " + b);
+        } catch (Exception e) {
+            System.out.println("\nError: Please enter valid integers!");
+        } finally {
+            scanner.close();
+        }
+    }
+}
+
