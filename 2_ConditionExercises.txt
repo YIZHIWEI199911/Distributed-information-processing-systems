@@ -1,0 +1,176 @@
+
+
+
+Create a program that reads a number and checks is it even or odd
+	Example_1:
+    Input: 2
+    Output: even
+	Example_2:
+    Input: 3
+    Output: odd
+
+
+Create a program that reads the number and checks is it less, more or equals 0
+	Example_1:
+    Input: 2
+    Output: more than 0
+	Example_2:
+    Input: -3
+    Output: less than 0
+	Example_3:
+    Input: 0
+    Output: equals 0
+
+
+Create a program that find a maximum from 3 integer numbers.
+	Example:
+    Input: 2
+	   5
+	   3
+    Output: 5
+
+
+Create a program that find a minimum from 3 integer numbers.
+	Example:
+    Input: 2
+	   5
+	   3
+    Output: 2
+
+
+An integer number is given. Create a program that checks it and prints its description, like “negative even number”, “zero number”, “positive odd number”, etc.
+	Example_1:
+    Input: 2
+    Output: positive even number
+	Example_2:
+    Input: -3
+    Output: “negative odd number
+	Example_3:
+    Input: 0
+    Output: zero number
+
+
+It's the end of the semester and you got your marks from, Geometry, Algebra, Physics classes. If the average score is 7 and above print "Good job!", if the average score is between 6 and 4 print "You need to work harder!", if the average score is below 4 print "Failed, you really need to work harder!".
+Create a program that:
+Reads the values of these 3 lessons
+Calculate the average of your grades
+Example: Geometry = 6, Algebra = 7, Physics = 8
+Output: Your average score is 7, Good job!"
+Warning! Do not use the programming language magic. After you complete the exercise feel free to do so.
+
+
+In a company the monthly salary of an employee is calculated by minimum wage 400$ per month, plus 20$ multiply by the employment years, plus 30$ for each employee kid, plus 100$ if the employee didn't miss any day of work.
+Create a program that:
+Reads the employment years
+Reads the number of each employee kids
+Reads how many days of work the employee miss
+Prints the total amount the employee must take
+Output: "The total amount is 660$, 400$ minimum wage + 100$ for 5 years experience + 60$ for 2 kids + 100$ for not missing a day at work"
+
+
+An internet cafe has 2 ways of charging. If the user is a member pays 2$/hour, Else the user pays 5$. Find if someone is a member or not and calculate the price based on how many hours the user spend.
+Create a program that:
+    Reads how many hours the user spend
+    Check if is a member
+    Print the total amount the user has to pay
+	Exemple_1:
+    Input: 5
+	   true
+    Output: The user is a member stayed 5 hours for 2 $/hour total amount is $10
+	Exemple_2:
+    Input: 5
+	   false
+    Output: The user is a member stayed 5 hours for 5 $/hour total amount is $25
+
+
+You've consumed X amount of Mbps on Wikipedia and Y amount of Mbps on memes. The cost of visiting Wikipedia is 0,10$ per Mb and the cost for watching memes is 0,05$ per Mb. If total consumption is less than 100$ print "Well consumption", if more - print "Too much consumption". If watching meme consumption is greater than reading wikipedia consumption print "HOW MANY MEMES".
+Create a program that:
+    Reads X(wikipedia Mb consupmtion) and Y(watching meme Mb consumption)
+    Calculates the total consumption
+    If total consumption greater than 100$ print proper message
+    If watching meme consumption is greater than reading wikipedia articles print proper messages
+	Example_1:
+    Input: 200, 200
+    Output: ""Well consumption"
+	Example_2:
+    Input: 1000, 1000
+    Output: "Too much consumption"
+	Example_3:
+    Input: 200, 2000
+    Output: "Too much consumption"
+            "HOW MANY MEMES"
+	Example_4:
+    Input: 100, 1000
+    Output: ""Well consumption"
+	    "HOW MANY MEMES"		
+
+
+You want to buy something from Amazon. The seller charges different prices for shipping cost based on location. For US it's 5$ for Europe it's 7$ for Canada it's 3$ for other places it's 9$
+Create a program that:
+    Reads your location
+    Print the amount of money you have to pay for the shipping.
+	Example:
+    Input: Canada
+    Ouput: "You have to pay 3$ for shipping cost"
+
+
+Create a program that determines the season based on the months name.
+	Example_1:
+    Input: January
+    Ouput: Winter
+	Example_2:
+    Input: dfgfgf
+    Ouput: Wrong input!
+(Months: January February March April May June July August September October November December)
+(Seasons: Spring Autumn Summer Winter)
+
+
+A cell phone company has the following billing policy
+				Fixed cost 25$
+Call duration(in seconds) 	Charge($/per second)
+	1-500 				0,01
+	501-800 			0,008
+	801+ 				0,005
+Create a program that:
+    Reads how many seconds was the calls duration
+    Calculates the monthly bill
+    Prints the total amount
+	Example:
+    Input: 1000
+    Output: total amount: 33,4$ (25 + (500 * 0,01 + 300 * 0,008 + 200 * 0.005))
+
+
+A fast food chain has these meals
+	Meal 		Price
+	Burger 		5$
+	Pizza 		3$
+	Hot Dog 	1,5$
+Create a program that:
+    Reads the meal the customer wants
+    Prints the cost of the meal
+    Input example: "Hot Dog"
+    Output: "Hot Dog 1,50$"
+
+
+Create a program that checks if year is leap.
+Leap year is a year that has 366 days (29 days in February).
+A year wich number is exactly divided by 4 (without a remainder) is considered a leap year,
+with the exception of these years wich numbers are divided by 100 and not divided by 400
+(for example, the years 300, 1300 and 1900 are not leap years, but 1200 and 2000 are)
+	Example_1:
+Input: 2004
+Output: this year is leap
+	Example_2:
+Input: 2023
+Output: this year is not leap
+
+
+Create a program that reads a year and a month.
+How many days has the month?
+Warning! February can have 29 or 28 days. It's up to the year (leap or not).
+    Input example 1: February
+		     2004
+    Output example 1: This month has 29 days
+    Input example 2: February
+		     2003
+    Output example 2: This month has 28 days
