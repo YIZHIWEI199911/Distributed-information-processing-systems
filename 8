@@ -1,0 +1,48 @@
+//You are interested in buying a new laptop. You check the price and you see that the price is 300$ without the 10% tax.
+//Create a program that:
+//Reads the price of the laptop
+//Reads the tax percentage
+//Prints the total amount
+//Output: "The total price of the laptop is 330$"
+//您想购买一台新笔记本电脑。您查看了价格，发现不含 10% 的税，价格为 300 美元。
+//创建一个程序，用于：
+//读取笔记本电脑的价格
+//读取税率
+//打印总金额
+//输出：“笔记本电脑的总价为 330 美元”
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            // Read laptop price from user
+            System.out.print("Enter the price of the laptop: ");
+            double laptopPrice = scanner.nextDouble();
+
+            // Read tax percentage from user
+            System.out.print("Enter the tax percentage: ");
+            double taxPercentage = scanner.nextDouble();
+
+            // Validate inputs (must be non-negative)
+            if (laptopPrice < 0 || taxPercentage < 0) {
+                System.out.println("Error: Price and tax percentage cannot be negative!");
+                return;
+            }
+
+            // Calculate tax amount and total price
+            double taxAmount = laptopPrice * (taxPercentage / 100);
+            double totalPrice = laptopPrice + taxAmount;
+
+            // Display result in the required format
+            System.out.printf("The total price of the laptop is %.0f$%n", totalPrice);
+
+        } catch (Exception e) {
+            // Handle non-numeric input errors
+            System.out.println("Error: Please enter valid numbers for price and tax percentage!");
+        } finally {
+            scanner.close();
+        }
+    }
+}
