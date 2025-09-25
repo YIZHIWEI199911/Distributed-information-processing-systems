@@ -1,0 +1,47 @@
+//You now own some property and you want to calculate the total area of the property.
+Create a program that:
+Reads the width and height
+Prints the area
+Example: width = 5, height = 2
+Output: total_area = 10
+//你现在拥有一些房产，你想计算该房产的总面积。
+创建一个程序，用于：
+读取宽度和高度
+打印面积
+示例：width = 5, height = 2
+输出：total_area = 10
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            // Get width input from user
+            System.out.print("Enter the width of the property: ");
+            double width = scanner.nextDouble();
+
+            // Get height input from user
+            System.out.print("Enter the height of the property: ");
+            double height = scanner.nextDouble();
+
+            // Validate inputs (must be positive)
+            if (width <= 0 || height <= 0) {
+                System.out.println("Error: Width and height must be positive numbers!");
+                return;
+            }
+
+            // Calculate total area (width × height)
+            double totalArea = width * height;
+
+            // Display result in the required format
+            System.out.printf("total_area = %.0f%n", totalArea);
+
+        } catch (Exception e) {
+            // Handle non-numeric input errors
+            System.out.println("Error: Please enter valid numbers for width and height!");
+        } finally {
+            scanner.close();
+        }
+    }
+}
