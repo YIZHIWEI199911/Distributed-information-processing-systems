@@ -1,0 +1,43 @@
+//Enter the width w and height h of the rectangle. Find and display on the console the perimeter and area of a given rectangle.
+//输入矩形的宽度 w 和高度 h。计算给定矩形的周长和面积，并在控制台上显示。
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            // Get width input from user
+            System.out.print("Enter the width of the rectangle: ");
+            double width = scanner.nextDouble();
+
+            // Get height input from user
+            System.out.print("Enter the height of the rectangle: ");
+            double height = scanner.nextDouble();
+
+            // Validate inputs (must be positive numbers)
+            if (width <= 0 || height <= 0) {
+                System.out.println("Error: Width and height must be positive numbers!");
+                return;
+            }
+
+            // Calculate perimeter: 2 * (width + height)
+            double perimeter = 2 * (width + height);
+
+            // Calculate area: width * height
+            double area = width * height;
+
+            // Display results with 2 decimal places
+            System.out.printf("Perimeter of the rectangle: %.2f%n", perimeter);
+            System.out.printf("Area of the rectangle: %.2f%n", area);
+
+        } catch (Exception e) {
+            // Handle non-numeric input errors
+            System.out.println("Error: Please enter valid numbers for width and height!");
+        } finally {
+            // Close the scanner to release resources
+            scanner.close();
+        }
+    }
+}
