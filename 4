@@ -1,0 +1,57 @@
+//It's the end of the semester and you got your grades from three classes: Geometry, Algebra, and Physics.
+//Create a program that:
+//Reads the grades of these 3 classes (Grades range from 0 - 10)
+//Calculate the average of your grades
+//Example: Geometry = 6, Algebra = 7, Physics = 8
+//Output: average_score = 7
+//学期结束了，你拿到了几何、代数和物理三门课的成绩。
+//创建一个程序，用于：
+//读取这三门课程的成绩（成绩范围为 0 - 10）
+//计算你的平均成绩
+//示例：几何 = 6，代数 = 7，物理 = 8
+//输出：average_score = 7
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            // Read and validate Geometry grade
+            System.out.print("Enter your Geometry grade (0-10): ");
+            double geometry = scanner.nextDouble();
+            if (geometry < 0 || geometry > 10) {
+                System.out.println("Error: Grade must be between 0 and 10!");
+                return;
+            }
+
+            // Read and validate Algebra grade
+            System.out.print("Enter your Algebra grade (0-10): ");
+            double algebra = scanner.nextDouble();
+            if (algebra < 0 || algebra > 10) {
+                System.out.println("Error: Grade must be between 0 and 10!");
+                return;
+            }
+
+            // Read and validate Physics grade
+            System.out.print("Enter your Physics grade (0-10): ");
+            double physics = scanner.nextDouble();
+            if (physics < 0 || physics > 10) {
+                System.out.println("Error: Grade must be between 0 and 10!");
+                return;
+            }
+
+            // Calculate average
+            double average = (geometry + algebra + physics) / 3;
+
+            // Display result (formatted to 1 decimal place for readability)
+            System.out.printf("average_score = %.1f%n", average);
+
+        } catch (Exception e) {
+            // Handle non-numeric input errors
+            System.out.println("Error: Please enter valid numbers for grades!");
+        } finally {
+            scanner.close();
+        }
+    }
+}
