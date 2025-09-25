@@ -1,0 +1,55 @@
+//You have 100000 USD are interested in buying crypto-currencies. You want to see how many coins you can buy in Bitcoin, Ethereum, and Litecoin.
+//Create a program that:
+//Reads the price of Bitcoin, Ethereum, and Litecoin
+//Prints the amount of Bitcoin, Ethereum, and Litecoin you can buy
+//Example: money = 100, bitcoin_price = 50, ethereum_price = 25, litecoin_price = 10
+//Output: "With 100000$ you can buy: 2000 Bitcoins, 4000 Ethereum, and 10000 Litecoins"
+//您有 100,000 美元，有意购买加密货币。您想看看可以购买多少比特币、以太坊和莱特币。
+//创建一个程序，用于：
+//读取比特币、以太坊和莱特币的价格
+//打印您可以购买的比特币、以太坊和莱特币的数量
+//示例：money = 100, bitcoin_price = 50, ethereum_price = 25, litecoin_price = 10
+//输出：“用 100,000 美元您可以购买：2,000 个比特币、4,000 个以太坊和 1,000 个莱特币”
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Total money available: 100000 USD
+        final double TOTAL_MONEY = 100000;
+
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            // Read cryptocurrency prices from user
+            System.out.print("Enter the price of Bitcoin: ");
+            double bitcoinPrice = scanner.nextDouble();
+
+            System.out.print("Enter the price of Ethereum: ");
+            double ethereumPrice = scanner.nextDouble();
+
+            System.out.print("Enter the price of Litecoin: ");
+            double litecoinPrice = scanner.nextDouble();
+
+            // Validate prices (must be positive)
+            if (bitcoinPrice <= 0 || ethereumPrice <= 0 || litecoinPrice <= 0) {
+                System.out.println("Error: All cryptocurrency prices must be positive numbers!");
+                return;
+            }
+
+            // Calculate quantity of each cryptocurrency that can be bought
+            double bitcoinQty = TOTAL_MONEY / bitcoinPrice;
+            double ethereumQty = TOTAL_MONEY / ethereumPrice;
+            double litecoinQty = TOTAL_MONEY / litecoinPrice;
+
+            // Display the result in the required format
+            System.out.printf("With 100000$ you can buy: %.2f Bitcoins, %.2f Ethereum, and %.2f Litecoins%n",
+                    bitcoinQty, ethereumQty, litecoinQty);
+
+        } catch (Exception e) {
+            // Handle non-numeric input errors
+            System.out.println("Error: Please enter valid numbers for cryptocurrency prices!");
+        } finally {
+            scanner.close();
+        }
+    }
+}
